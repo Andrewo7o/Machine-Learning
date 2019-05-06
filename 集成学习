@@ -12,3 +12,6 @@ In this repository,  I will sort out some knowledge points about machine learnin
 
 A.个体学习器间存在强依赖关系，必须串行生成的序列化方法：Boosting
 B.个体学习器不存在强依赖关系，可同时生成的并行化方法：Bagging和“随机森林”
+
+Boosting --> AdaBoost "残差逼近"思想，主要关注的是降低偏差，Boosting能基于泛化性能相当弱的学习器构建出很强的集成
+
