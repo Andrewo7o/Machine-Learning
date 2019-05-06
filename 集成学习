@@ -4,15 +4,11 @@ In this repository,  I will sort out some knowledge points about machine learnin
 集成学习（Ensemble Learning）
 
 同质集成中的个体学习器称作“基学习器”（base learner），相应的学习算法称为基学习算法（base learning algorithm）
-
 异质集成中的个体学习器称作“组件学习器”（component learner），或直接称为个体学习器
 
 弱学习器：指泛化性能略优于随机猜测的学习器
-
 随着集成中个体分类器数目T的增大，集成的错误率将指数级下降，最终趋向于零
-
 集成学习研究的核心：如何产生并结合“好而不同”的个体学习器
 
 A.个体学习器间存在强依赖关系，必须串行生成的序列化方法：Boosting
-
 B.个体学习器不存在强依赖关系，可同时生成的并行化方法：Bagging和“随机森林”
