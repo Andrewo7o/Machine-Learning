@@ -1,0 +1,26 @@
+# Mashine-Learning
+In this repository,  I will sort out some knowledge points about machine learning.
+两个基本问题：性能度量（“有效性指标”）和距离计算
+目标：（intra-cluster similarity）簇内相似度 高     （extra-cluster similarity）簇间相似度 低
+
+外部指标：将聚类结果与某个参考模型比较   a.Jaccard系数  b.FM指数  c.Rand指数
+内部指标：直接考察聚类结果而不利用任何参考模型   a.DB指数   b.Dunn指数
+
+有序属性：如{1，2，3}  闵科夫斯基距离   p=1 -> 曼哈顿距离   p=2 -> 欧式距离
+无序属性：如{飞机，轮船}  VDM（Value Difference Metric）
+当样本空间中不同属性的重要性不同时，可使用“加权距离”  --> 加权闵科夫斯基距离
+
+“非度量距离”通过“距离度量学习”来实现
+贪心算法：在每一步选择中都采取当前状态下最好或最优的选择
+A.K-mean算法是NP难问题，解决方案是贪心算法  过程：设置最大轮数或最小调整幅度阈值
+B.学习向量量化（Learning Vector Quantization, LVQ） --> “Voronoi剖分”
+C.高斯混合聚类：常采用EM算法进行迭代优化
+               E步：根据当前参数计算每个样本属于每个高斯成分的后验概率
+               M步：更新模型参数
+
+密度聚类：DBSCAN --> 由密度可达关系导出的最大密度相连样本的集合
+
+层次聚类：
+A.“自底向上”聚合策略 --> AGNES（AGglomerative NESting):a.单链接算法 b.全链接算法 c.均链接算法    --> 树状图
+B.“自顶向下”分拆策略 --> DIANA
+AGNES和DIANA都不能对已合并或已分拆的聚类簇进行回溯调整
