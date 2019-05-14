@@ -1,0 +1,9 @@
+# Mashine-Learning
+In this repository,  I will sort out some knowledge points about machine learning.
+批量梯度下降(BGD，Batch Gradient Descent)
+随机梯度下降(SGD,Stochastic Gradient Descent)
+小批量梯度下降(MBGD，Mini-batch Gradient Descent)
+
+损失函数计算的是一个样本的误差
+代价函数计算的是整个训练集上所有样本误差的平均
+目标函数 = 代价函数 + 正则化项
