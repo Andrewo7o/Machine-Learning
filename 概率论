@@ -1,0 +1,10 @@
+# Mashine-Learning
+In this repository,  I will sort out some knowledge points about machine learning.
+后验分布: P(因|果) 知果求因
+先验分布：P(因) 根据历史规律求因
+似然估计: P(果|因) 先定下原因，根据原因估计结果
+贝叶斯公式: P(A|B) = P(B|A)*P(A)/P(B)   P(B) --> evidence
+MAP(Max aposterior) 最大后验估计 argmax P(θ|x) = argmax p(x|θ)*p(θ)/p(x) = argmax p(x|θ)*p(θ) ==> posterior ∝ (Likelihood * Prior)
+                                   θ               θ                         θ
+最大似然估计(ML, Maximum Likelihood)  argmaxp(x|θ)
+                                         θ
